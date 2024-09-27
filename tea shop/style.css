@@ -105,7 +105,7 @@ header{
 
 .nav-icons i:hover{
     transform: scale(1.1);
-    color:  var(--text-color);
+    color: var(--text-color);
 }
 
 .sticky{
@@ -209,8 +209,7 @@ span{
 
 
 .container-box img{
-    width: 100%;
-    max-width: 50px; /*----------*/
+    width: 50px;
     height: auto;
 }
 
@@ -224,7 +223,7 @@ span{
     color: var(--second-color);
     font-size:  var(--p-font);
     letter-spacing: 1px;
-    transition: all .50s ease; /*ratom vwert .50s da ara .5*/
+    transition: all .5s ease;
 }
 
 .container-box a:hover{
@@ -234,10 +233,12 @@ span{
 /* about */
 .about{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);/*------*/
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 4rem;
+    
 }
+
 
 .about-img img{
     width: 100%;
@@ -265,6 +266,7 @@ span{
 }
 
 /* shop */
+
 .middle-text{
     text-align: center;
 }
@@ -303,7 +305,7 @@ span{
 }
 
 .row h3{
-    font-size: 20px; /* ratom viyenebt aq pixelebs da ara remebs */
+    font-size: 1.5rem; 
     margin-bottom: 5px;
     font-weight: 700;
 }
@@ -367,6 +369,7 @@ span{
 }
 
 /* reviews */
+
 .review-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
@@ -379,6 +382,10 @@ span{
     padding: 35px;
     background: var(--other-color);
     border-radius: 3rem;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .box p{
@@ -437,8 +444,7 @@ span{
 .contact-img img{
     width: 100%;
     max-width: 200px;
-    height: auto;/*******/
-    cursor: pointer;/***ristvis vshvebit amas tu shegviZlia ubralod linkad gadavaqciot****/
+    cursor: pointer;
     transition: all .50s ease;
 }
 
@@ -485,6 +491,7 @@ span{
     flex-wrap: wrap;
     align-items: center;
     gap: 3rem;
+    justify-content: center;
 }
 
 .main-d a{
@@ -535,7 +542,10 @@ span{
     }
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1100px){
+    .home{
+        height: 100vh;
+    }
     #menu-icon{
         display: initial;
     }
@@ -597,7 +607,7 @@ span{
     }
 
     .home{
-        grid-template-columns: 1fr; /*****/
+        grid-template-columns: 1fr;
         height: 100vh;
     }
 
@@ -688,7 +698,7 @@ span{
     }
 
     .btn{
-        padding: 10px 15px;
+        padding: 5px 10px;
     }
 
     .contact-img img{
